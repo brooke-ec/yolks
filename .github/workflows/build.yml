@@ -29,5 +29,5 @@ jobs:
       - uses: docker/build-push-action@v5
         with:
           context: ./yolks/${{ matrix.image }}
-          tags: ghcr.io/NimajnebEC/yolks:${{ matrix.image }}
+          tags: ghcr.io/nimajnebec/yolks:${{ matrix.image }}
           push: true
