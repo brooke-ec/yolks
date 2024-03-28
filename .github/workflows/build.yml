@@ -13,6 +13,8 @@ on:
 jobs:
   build:
     name: "yolks:${{ matrix.image }}"
+    permissions:
+      packages: write
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
